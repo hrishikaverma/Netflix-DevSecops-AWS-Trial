@@ -37,6 +37,8 @@ RUN rm -rf /etc/nginx/conf.d/default.conf
 # Copy custom nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
 
+RUN apk update && apk upgrade --no-cache
+
 # Prepare nginx for non-root execution
 RUN mkdir -p /var/cache/nginx/client_temp \
     /var/cache/nginx/proxy_temp \
