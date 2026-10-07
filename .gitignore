@@ -27,3 +27,7 @@ yarn.lock
 yarn-debug.log*
 yarn-error.log*
 cosign.key
+ai-security/venv/
+ai-security/venv311/
+
+ai-security/__pycache__/
