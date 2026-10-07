@@ -13,22 +13,14 @@ environment {
     AI_SECURITY_CONTAINER = 'ai-security-api'
 
 }
-
 stages {
 
-
     stage('Checkout') {
-
         steps {
-
-            git branch: 'pre-production-security-gate',
-                url: 'https://github.com/hrishikaverma/Netflix-DevSecops.git'
-
+            git branch: 'feature/aws-ai-risk-prediction',
+                url: 'https://github.com/hrishikaverma/Netflix-DevSecOps-AWS-Trial.git'
         }
-
     }
-
-
 
     stage('Node Version Check') {
 
